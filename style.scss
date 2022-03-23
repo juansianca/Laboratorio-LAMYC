@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$logo-color: #AF2848;
+$link-colors: black;
+$degrade-color-dark: rgb(153, 153, 153);
+$background-color: white;
+
+nav{
+    header{
+            background-image: linear-gradient(to right, $degrade-color-dark,white);
+            grid-column-start: 1;
+            grid-column-end: -1;
+        div{ 
+            h1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            color: $logo-color;
+            font-size: 100px;
+            margin: 0 0 0 20px;
+            }
+            h2{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            margin: 0 0 20px 20px;
+            font-size: 20px;
+            }
+        }
+        div{
+        ul{
+            grid-column-start: 2;
+            grid-column-end: -1;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            li{
+                a{
+                    color: $link-colors;
+                    text-decoration: none;
+                }
+                &:hover{
+                    -webkit-transform: scale(1.1); transform: scale(1.1);
+                }
+                }
+            }
+        }
+    }
+}
+    main{
+            grid-column-start: 1;
+            grid-column-end: -1;
+            background-color: $background-color;
+            background-image: url(../Images/lab_fondo.png);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y:top;
+            background-size: cover;
+            P{
+                padding: 100px 100px 1000px 100px;
+                font-size:x-large;
+                font-family: sans-serif;
+            }
+        }
+    footer{
+            grid-column-start: 1;
+            grid-column-end: -1;
+            background-image: linear-gradient(to right, $degrade-color-dark,white);
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0 10px 0;
+            div{
+                section{
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        color: $link-colors;
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        -webkit-transform: scale(1.1); transform: scale(1.1);
+                    }
+                }
+                }
+            }
+    
+
