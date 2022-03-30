@@ -1,8 +1,11 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
+/*base*/
+/*componente*/
 nav header {
   background-image: linear-gradient(to right, #999999, white);
   grid-column-start: 1;
@@ -71,4 +74,25 @@ footer div section a {
 footer div section:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  background-color: yellow;
 }
+
+.servicio-list {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  padding: 10px, 0, 10px, 0;
+  font-size: medium;
+}
+
+.reseña {
+  padding: 100px 100px 1000px 100px;
+  font-size: x-large;
+  font-family: sans-serif;
+}
+
+iframe {
+  margin: 20px, 20px, 20px, 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

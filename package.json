@@ -1,15 +1,19 @@
 {
   "name": "laboratorio_lamyc---saas",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-   "dev": "sass style.scss style/style.css -w --no-source-map"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansianca/Laboratorio-LAMYC.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/juansianca/Laboratorio-LAMYC/issues"
   },
-  "homepage": "https://github.com/juansianca/Laboratorio-LAMYC#readme"
+  "homepage": "https://github.com/juansianca/Laboratorio-LAMYC#readme",
+  "description": ""
 }
