@@ -5,7 +5,7 @@ nav{
         div{ 
             h1{
             @extend %grid-columna-2;
-            color: $logo-color;
+            color: map-get($colores,logo-color);
             font-size: 100px;
             margin: 0 0 0 20px;
             }
@@ -24,7 +24,7 @@ nav{
             padding: 10px;
             li{
                 a{
-                    color: map-get($color, link-colors);
+                    color: map-get($colores, link-colors);
                     text-decoration: none;
                 }
                 &:hover{
@@ -35,30 +35,53 @@ nav{
         }
     }
 }
-    main{
+main{
             @extend %grid-columna-1;
             background-image: url(../Images/lab_fondo.png);
+        
            @include background-image;
-            P{
-                padding: 100px 100px 1000px 100px;
-                font-size:x-large;
-                font-family: sans-serif;
+           height: 750px;
+           div{
+                
+                h3{
+                    padding: 50px 0 0 50px;
+                
+                }
+                    p{
+                        margin: 50px 50px 0 50px;
+                        font-size: x-large;
+                        font-family: sans-serif;
+                        text-align:justify;
+                    }
+                    p{
+                        margin: 50px 50px 0 50px;
+                        font-size: x-large;
+                        font-family: sans-serif;
+                        text-align:justify;
+                    }
+                
             }
-        }
+           }
+        
+           
+        
+    
+             
+        
     footer{
             @extend %grid-columna-1;
-            background-image: linear-gradient(to right, map-get($colors,degrade-color-dark),white);
+            background-image: linear-gradient(to right, map-get($colores,degrade-color-dark),white);
             display: flex;
             justify-content: space-around;
             padding: 10px 0 10px 0;
-            color: map-get($color, link-colors);
+            color: map-get($colores, link-colors);
             text-decoration: none;
             div{
                 section{
                     a{
                         display: flex;
                         justify-content: center;
-                        color: $link-colors;
+                        color: map-get($colores,link-colors);
                         text-decoration: none;
                     }
                     &:hover{
@@ -66,5 +89,55 @@ nav{
                     }
                 }
                 }
+    }
+
+    @media screen and (max-width:980px) {
+        nav{
+            header{
+                    background-image: linear-gradient(to right, map-get($colores,degrade-color-dark),white);
+                    @extend %grid-columna-1;
+                div{ 
+                    h1{
+                    @extend %grid-columna-2;
+                    color: map-get($colores,logo-color);
+                    font-size: 60px;
+                    margin: 0 0 0 20px;
+                    }
+                }
             }
+        }
+        
+        main{
+            @extend %grid-columna-1;
+            background-image: url(../Images/lab_fondo.png);
+        
+           @include background-image;
+           height:auto;
+        }
+        footer{
+            @extend %grid-columna-1;
+            background-image: linear-gradient(to right, map-get($colores,degrade-color-dark),white);
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 10px 0 10px 0;
+            color: map-get($colores, link-colors);
+            text-decoration: none;
+            div{
+                section{
+                    a{
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        color: map-get($colores,link-colors);
+                        text-decoration: none;
+                    }
+                    &:hover{
+                        -webkit-transform: scale(1.1); transform: scale(1.1);
+                    }
+                }
+                }
+    }
+    }
             

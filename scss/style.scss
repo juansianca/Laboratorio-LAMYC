@@ -18,13 +18,32 @@
     font-size: medium;
     
     }
+.serv-color{
+    background-color: map-get($colores,logo-color);
+    border-color: map-get($colores, logo-color);
+    color: white;
+    margin: 10px 0 0 30px;
+}
 .reseña{
     padding: 100px 100px 1000px 100px;
     font-size:x-large;
     font-family: sans-serif;
 }
 
-iframe{
-    margin: 20px, 20px, 20px, 20px;
+.mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contactenos1{
+    display: flex;
+    justify-content: flex-start;
+}
+.contactenos2 {
+    display: flex;
+    justify-content: left;
+}
+
+    
 
